@@ -4,6 +4,10 @@ To be used with links generated at https://abfahrten.hvv.de/
 
 Generated urls need to be changed to include api/monitors (See Sample file contents)
 
+## Installation
+
+pip install hvvabfahrtsmonitor
+
 ## Usage
 
 ```python
