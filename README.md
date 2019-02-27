@@ -7,8 +7,8 @@ Generated urls need to be changed to include api/monitors (See Sample file conte
 ## Usage
 
 ```python
-from hvvabfahrtsmonitor.hvvabfahrtsmonitor import HvvAbfahrtsmonitor
-monitor = Monitor(file, schema_file)
+from hvvabfahrtsmonitor import HvvAbfahrtsmonitor
+monitor = HvvAbfahrtsmonitor(file, schema_file)
 monitor.get_times() #Get a dict of lists of times, in minutes, for when the buses/metros/trains are due next.
 ```
 ### Sample file contents (JSON)

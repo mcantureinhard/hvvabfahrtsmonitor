@@ -91,12 +91,10 @@ class HvvAbfahrtsmonitor(object):
             return
         self.parsed_objects = {}
         for url in self.urls:
-            pprint(url)
             response = self._request(url["url"])
             times_obj = None
             if response is not None:
                 obj=self._parse_response(response)
-                pprint(obj)
                 self.parsed_objects[url["name"]] = obj
         self._mark_request_time()
 
