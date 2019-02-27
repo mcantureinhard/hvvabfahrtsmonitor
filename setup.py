@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="hvvabfahrtsmonitor",
-    version="0.0.1",
+    version="0.1.0",
     author="Manuel Catu",
     author_email="m.cantu.reinhard@gmail.com",
     description="Do requests to the hvv abfahrtsmonitor and get parsed data",
