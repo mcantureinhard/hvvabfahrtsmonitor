@@ -26,9 +26,7 @@ def test_regex():
 
 def test_request():
     obj = HvvAbfahrtsmonitor("hvv.json", "hvv-schema.json")
-    #_parse_response
 
     assert obj._request("") == None
-
-
-
+    assert obj._request("www.google.com") == None
+    assert obj._request("https://abfahrten.hvv.de/api/monitors/a038583f-f72b-4e4e-ba22-9d9903ced316") != None
