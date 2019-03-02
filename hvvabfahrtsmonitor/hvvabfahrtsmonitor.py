@@ -36,11 +36,15 @@ class HvvAbfahrtsmonitor(object):
 
     def _request(self, url):
         headers = {"Accept":"application/json", "Content-Type":"application/vnd.api+json"}
-        r = requests.get(url, headers=headers)
-        if r.status_code == 200:
-            return r.text
-        else:
+        try:
+            r = requests.get(url, headers=headers)
+            if r.status_code == 200:
+                return r.text
+            else:
+                return None
+        except requests.exceptions.MissingSchema:
             return None
+
     def _parse_response(self, response):
         parsed = json.loads(response)
         obj = self.model(parsed)

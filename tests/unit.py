@@ -29,6 +29,6 @@ def test_request():
     #_parse_response
 
     assert obj._request("") == None
-    
+
 
 
