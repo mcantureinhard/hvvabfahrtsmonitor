@@ -18,6 +18,7 @@ class HvvAbfahrtsmonitor(object):
         self._init_schema()
         self._load_url_data()
         self._init_regex()
+
     def _init_regex(self):
         self.regex = re.compile("([-+])(\d+)")
 

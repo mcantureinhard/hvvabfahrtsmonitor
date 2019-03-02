@@ -1,0 +1,50 @@
+{
+  "$schema":"http://json-schema.org/draft-07/schema#",
+  "title":"Hvv Schema",
+  "definitions":{
+    "departure":{
+      "type": "object",
+      "properties":{
+        "delay":{
+          "type":"string"
+        },
+        "direction":{
+          "type":"string"
+        },
+        "hasDelay":{
+          "type":"boolean"
+        },
+        "icon":{
+          "type":"object"
+        },
+        "line":{
+          "type":"string"
+        },
+        "station":{
+          "type":"string"
+        },
+        "time":{
+          "type":"string"
+        }
+      },
+      "required": ["hasDelay", "line", "time"]
+    }
+  },
+  "type":"object",
+  "properties":{
+    "data":{
+      "type":"object",
+      "properties":{
+        "attributes":{
+          "type":"object",
+          "properties":{
+            "departures":{
+              "type":"array",
+              "items":{"$ref":"#/definitions/departure"}
+            }
+          }
+        }
+      }
+    }
+  }
+}

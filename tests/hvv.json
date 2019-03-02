@@ -1,0 +1,11 @@
+{
+	"data": [{
+			"name": "S",
+			"url": "https://abfahrten.hvv.de/api/monitors/a038583f-f72b-4e4e-ba22-9d9903ced316"
+		},
+		{
+			"name": "B",
+			"url": "https://abfahrten.hvv.de/api/monitors/f76a6c23-a682-4297-aa99-f815157e2bca"
+		}
+	]
+}
